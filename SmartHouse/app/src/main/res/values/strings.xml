@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SmartHouse</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="plan_your_turning_on_diary">plan your turning on diary</string>
+    <string name="sunday">sunday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="thursday">thursday</string>
+    <string name="monday">monday</string>
+    <string name="friday">friday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="saturday">saturday</string>
+    <string name="choose_day">choose day:</string>
+    <string name="from">from:</string>
+    <string name="choose_time">choose time:</string>
+</resources>

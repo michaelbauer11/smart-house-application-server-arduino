@@ -1,0 +1,22 @@
+import socket
+
+server_socket = socket.socket()
+server_socket.bind(('0.0.0.0', 444))
+server_socket.listen(1)
+(client_socket, client_address) = server_socket.accept()
+data = client_socket.recv(1024)
+print data
+while data != 'exit':
+
+    if (data == 'name'):
+        client_socket.send('michael')
+    elif (data == 'time'):
+        client_socket.send('10:18')
+    elif (data == 'address'):
+        client_socket.send(str(client_address))
+    print socket.gethostbyname(socket.gethostname())
+    data = client_socket.recv(1024)
+
+client_socket.send(data)
+client_socket.close()
+server_socket.close()
